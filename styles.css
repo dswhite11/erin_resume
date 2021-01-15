@@ -88,7 +88,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 2.9rem);
     justify-content: center;
     align-items: center;
   }
@@ -106,15 +106,18 @@
     padding-bottom: .1rem;
     border-bottom: 3px solid white;
   }
+
+
   
   .description {
     background-color: #464655;
     padding: 1rem 1.9rem;
     margin-bottom: 3rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
-    line-height: 2rem;
+    line-height: 2.5rem;
     border-radius: 6px;
+    width: 60%;
   }
   
   /* About me */
@@ -136,14 +139,17 @@
       7px 6px 1px #ccc;
   }
   
-  /* projects section */
+  /* experience section */
   
   #experience {
     background-color: #94958B;
-    height: auto;
+    height: 100vh;
   }
   
-  
+  #experience .description {
+    display: flex;
+    flex-direction: column;
+  }
   
   .project-grid {
     display: grid;
@@ -207,12 +213,17 @@
     transition: .7s;
   }
   
+  /* education section */
+
+  /* presentations section */
+
+  /* certifications section */
   
   /* contact me section */
   
   #contact {
     background-color: #B7B6C1;
-    height: 80vh;
+    height: calc(100vh - 2.9rem);
   }
   
   .contacts-grid {
