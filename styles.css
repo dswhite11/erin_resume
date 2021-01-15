@@ -30,22 +30,24 @@
   }
   
   .bar a {
-    color: #EDDFEF;
+    color: #333333;
     text-decoration: none;
     padding: .3rem;
+    padding-bottom: 0;
     transition: 0.3s;
   }
   
   .bar a:visited {
-    color: #EDDFEF;
+    color: #333333;
     text-decoration: none;
   }
   
   .bar a:hover {
-    background-color: #69664C;
     transition: 0.3s;
     border-radius: 3px;
     padding: .3rem;
+    padding-bottom: 0;
+    border: 1px solid black;
   }
   
   .bar a:active {
@@ -67,31 +69,39 @@
     left: 0;
     align-items: center;
     justify-items: center;
-    padding: .2rem;
+    padding: .3rem;
   }
   
   #navbar div {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
     text-transform: uppercase;
     font-size: 1.6rem;
     font-weight: 100;
   }
+
   
   /* body */
   
   .wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    height: calc(100vh - calc(100vh - 100%));
-    justify-content: beginning;
+    height: 100%;
+    justify-content: center;
     align-items: center;
-    padding-top: 8rem;
+  }
+
+  .inside-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
   }
   
-  .box {
+  .heading {
     margin-bottom: 3rem;
     padding-bottom: .1rem;
     border-bottom: 3px solid white;
@@ -288,6 +298,3 @@
     }
   }
   
-  
-  
-  Resources1× 0.5× 0.25×Rerun
