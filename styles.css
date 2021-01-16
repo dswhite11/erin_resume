@@ -21,6 +21,10 @@
     margin: 0;
     object-fit: cover;
   }
+
+  a:visited {
+    color: rgb(222, 220, 236);
+  }
   
   /* links */
   
@@ -112,6 +116,7 @@
   .heading {
     margin-bottom: 3rem;
     padding-bottom: .1rem;
+    padding-left: 1rem;
     border-bottom: 3px solid white;
     width: 40%;
   }
@@ -244,52 +249,37 @@
     background-color: #B7B6C1;
     height: calc(100vh - 2.9rem);
   }
-
-  #contact .description {
+  
+  .contacts-wrapper {
     display: flex;
-    justify-content: space-around;
-  }
-  
-  .contacts-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 3rem;
-    row-gap: 2rem;
-    justify-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    width: 50%;
-    padding: 0;
-    margin: 0;
   }
   
-  .contacts-grid img {
+  .contacts-wrapper img {
     height: 3rem;
     width: 3rem;
+    background-color: white;
+    border-radius: 10px;
   }
   
-  .contacts-grid span {
+  .contacts-wrapper span {
     font-size: 1.2rem;
   }
   
-  .contacts-grid a {
-    color: white;
+  .contacts-wrapper a {
     text-decoration: none;
   }
   
-  .contacts-grid a:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #B7B6C1;
+  .contacts-wrapper a:hover {
+    text-decoration: underline;
   }
   
   #email {
-    grid-column-start: 1;
-    grid-column-end: 3;
   }
   
   #phone {
-    grid-column: 3 / span 2;
   }
   
   /* footer */
