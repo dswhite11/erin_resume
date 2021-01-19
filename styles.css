@@ -63,7 +63,15 @@
   .bar a:active {
     color: white;
   }
+
+  .sublist {
+    margin-left: 1rem;
+  }
   
+  .unbulleted-item {
+    list-style-type: none;
+    border-bottom: 1px solid white;
+  }
   
   
   /* navigation bar */
@@ -159,6 +167,23 @@
     height: 100vh;
   }
   
+  #experience .description {
+    font-size: .8rem;
+    line-height: 1.4rem;
+    margin-top: 100px;
+  }
+
+  #experience .description > ul > li {
+     list-style-type: none;
+  }
+
+  #experience #last-item {
+    border-bottom: none;
+  }
+
+  #experience span:hover {
+    background-color: black;
+  }
   
   .project-grid {
     display: grid;
@@ -169,8 +194,6 @@
     margin: 0 auto;
     margin-bottom: 6rem;
   }
-  
-  
   
   .project-tile {
     display: flex;
