@@ -25,6 +25,13 @@
   a:visited {
     color: rgb(222, 220, 236);
   }
+
+  button {
+  }
+
+  .description-header {
+    text-align: center;
+  }
   
   /* links */
   
@@ -183,6 +190,11 @@
 
   #experience span:hover {
     background-color: black;
+  }
+
+  .trigger {
+    border-bottom: 1px solid white;
+    cursor: pointer;
   }
   
   .project-grid {

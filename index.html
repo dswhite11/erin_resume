@@ -8,7 +8,20 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".toggle").slideUp();
+      $(".trigger").click(function () {
+        $(this).next(".toggle").slideToggle("slow");
+      });
+      $(".toggle").click(function () {
+        $(this).slideUp();
+      });
+    });
+  </script>
 </head>
+
 
 <body>
   <header class="bar">
@@ -44,37 +57,58 @@
         <h1>Professional Experience</h1>
       </div>
       <div class="description">
-        <ul>
-          <li>Adjunct Faculty</li>
-          <li class="unbulleted-item">Belhaven University, Jackson, MS, Spring 2020</li>
-          <ul class="sublist">
+        <div class="description-header">
+          Click job title for more information.
+        </div>
+        <div>&nbsp;</div>
+        <div class="job-header">
+          <div class="trigger">
+            <h3>Adjunct Faculty</h3>
+            <h4>Belhaven University, Jackson, MS, Spring 2020</h4>
+          </div>
+          <ul class="toggle">
             <li>Teach introductory counseling course.</li>
             <li>Instruct, tutor, and grade using Canva software.</li>
             <li>Produce video content supplementing coursework.</li>
             <li>Support student success in partnership with student services.</li>
           </ul>
-          <li>&nbsp;</li>
-          <li>Therapist and Site Manager</li>
-          <li class="unbulleted-item">The Net Counseling Center, Jackson, MS, August 2016 - June 2020</li>
-          <ul class="sublist">
+        </div>
+        <div>&nbsp;</div>
+        <div class="job-header">
+          <div class="trigger">
+            <h3>Therapist and Site Manager</h3>
+            <h4>The Net Counseling Center, Jackson, MS, August 2016 - June 2020</h4>
+          </div>
+          <ul class="toggle">
             <li>Provided individual and group therapy to diverse clients in poverty, focusing on a trauma-informed
               approach.</li>
             <li>Developed systems for tracking counselors’ outcomes.</li>
             <li>Supported counselors through site supervision, training, and development.</li>
             <li>Managed recruiting & hiring communications and interviews.</li>
           </ul>
-          <li>&nbsp;</li>
-          <li>Therapist & Interim Director</li>
-          <li class="unbulleted-item">Madison Co. Adolescent Opportunities Program, Madison, MS, May 2015-February 2016</li>
-          <ul class="sublist">
-            <li>Provided individual, family, & group therapy for underserved adolescents referred by the youth court.</li>
+        </div>
+        <div>&nbsp;</div>
+        <div class="job-header">
+          <div class="trigger">
+            <h3>Therapist & Interim Director</h3>
+            <h4>Madison Co. Adolescent Opportunities Program, Madison, MS, May 2015-February 2016</h4>
+          </div>
+          <ul class="toggle">
+            <li>Provided individual, family, & group therapy for underserved adolescents referred by the youth court.
+            </li>
             <li>Completed record keeping required for program grant.</li>
             <li>Managed budget, programming, and staff as interim director.</li>
           </ul>
-          <li>&nbsp;</li>
-          <li>Mental Health Therapist</li>
-          <li id="last-item" class="unbulleted-item">Region Eight Behavioral Health, Hazlehurst, MS Aug. 2014 – Oct. 2014</li>
-        </ul>
+        </div>
+        <div>&nbsp;</div>
+        <div class="job-header">
+          <div class="trigger">
+            <h3>Mental Health Therapist</h3>
+            <h4>Region Eight Behavioral Health, Hazlehurst, MS Aug. 2014 – Oct.
+              2014</h4>
+          </div>
+        </div>
+
       </div>
       <!--
       <div class="project-grid">
@@ -182,6 +216,15 @@
   </div>
 
 </body>
+
+<script type="text/javascript">
+  $(function () {
+    $('#show-more').click(function () {
+      $('#belhaven-work').show();
+      return false;
+    });
+  });
+</script>
 
 
 </html>
